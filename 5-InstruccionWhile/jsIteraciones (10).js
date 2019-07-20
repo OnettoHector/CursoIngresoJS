@@ -1,40 +1,44 @@
-function mostrar() {
-	var contador = 0;
+function mostrar() 
+{
+	var contador=0;
+	var contadorPositivos=0
+	var contadorNegativos= 0
+	var acumuladorPositivos = 0;
+	var acumuladorNegativos = 0;
+	var contadorCeros = 0;
+	var contadorPares = 0;
 	var numero;
-	var numeroDos;
-	var suma;
-	
+	//declarar contadores y variables
 
-	numeroDos = 12;
-	suma = numero * numeroDos;
-	alert(suma);
-	suma = 3
-	suma = "lalala";//error
+	var respuesta =true;
+	while(respuesta==true)
+	{
+		numero = prompt("Ingrese un numero: ");
+		numero = parseInt(numero);
 
-	while (isNaN(suma)) {
-		alert("error");
-		suma = prompt("error, reingrese solo números")
+		if(numero>0)
+		{
+			contadorPositivos++;
+			acumuladorPositivos += numero;
+		}
+		else
+		{
+			contadorNegativos++
+			contadorNegativos += numero;
+			respuesta = confirm("Desea ingresar otro número?");
+		}
 
+			
+		
+		
 	}
 
-
-
-
-}
-/*
-	//else {
-	//	alert ("bien");
-	/*declarar contadores y variables 
-
-	var respuesta = "si";
-
-	while (respuesta != "no") {
-
-
-
-
 	
-
+	document.write("Suma de positivos: " + acumuladorPositivos "<br>");
+	document.write("Suma de negativos: " + acumuladorNegativos "<br>");
+	document.write("Cantidad de positivos: " + contadorPositivos "<br>");
+	document.write("Cantidad de negativos: " + contadorNegativos "<br>");
+	
 
 
 
