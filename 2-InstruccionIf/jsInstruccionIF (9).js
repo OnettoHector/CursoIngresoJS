@@ -1,12 +1,11 @@
-function mostrar()
-{
-	//Genero el número RANDOM entre 1 y 10
-	
-	var numerorandom
+function mostrar() {
+	//Genero el número RANDOM entre 1 y 10 
 
-	numerorandom = Math.floor((Math.random() * 10) + 1);
+	var numeroRandom;
 
-	alert (numerorandom)
-	
+	numeroRandom = Math.floor((Math.random() * 10) + 1)
+
+	console.log(numeroRandom);
+
 
 }//FIN DE LA FUNCIÓN

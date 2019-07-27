@@ -2,23 +2,15 @@
 Transformarlo a entero (parseInt), luego
 mostrar el importe con un Descuento del 25 %
 en el cuadro de texto "RESULTADO"*/
-function mostrarAumento()
-{
-    var numero1
-    var numero2
-    var numero3 
+function mostrarAumento() {
 
+    var importe = document.getElementById("importe").value;
+    var resultado;
 
+    parseInt(importe);
 
-    numero1 = document.getElementById ("importe").value;
-    numero2 = parseInt (numero1) - (numero1) /100 *25;
+    resultado = (importe) - (importe * 25 / 100);
 
+    document.getElementById("resultado").value = resultado; 
 
-
-    document.getElementById("resultado").value = numero2;
-    
-
-
-
-	
 }

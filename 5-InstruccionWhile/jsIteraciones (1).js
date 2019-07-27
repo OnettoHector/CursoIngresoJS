@@ -1,11 +1,13 @@
 function mostrar() {
-	var numero
-	numero = 1
-	while (numero < 11) {
-		console.log (+numero);
-		numero++
-		
+
+	var contador = 0
+
+	while (contador < 11) {
+		console.log("Número: " + contador)
+		contador++
 	}
+
+
 
 
 }//FIN DE LA FUNCIÓN

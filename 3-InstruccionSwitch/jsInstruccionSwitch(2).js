@@ -3,10 +3,21 @@ function mostrar() {
     var mesDelAnio = document.getElementById('mes').value;
 
     switch (mesDelAnio) {
+
+        case "Enero":
+        case "Febrero":
+        case "Marzo":
+        case "Abril":
+        case "Mayo":
+        case "Junio":
+            {
+                alert("Falta para el invierno");
+                break
+            }
         case "Julio":
         case "Agosto":
             {
-                alert("Abrigate que hace frio");
+                alert("Abrigate que hace frío!");
                 break;
             }
         case "Septiembre":
@@ -14,13 +25,13 @@ function mostrar() {
         case "Noviembre":
         case "Diciembre":
             {
-                alert("Ya pasamos el invierno");
+                alert("Ya pasamos el frío, ahora calor!");
                 break;
             }
-        default: //los defaults siempre van posicionados al final
-            {
-                alert("Falta para el invierno");
-            }
+
     }
+
+
+
 
 }//FIN DE LA FUNCIÓN

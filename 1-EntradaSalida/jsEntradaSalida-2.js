@@ -1,11 +1,12 @@
 /*Debemos lograr tomar un nombre con 'prompt' 
 y luego mostrarlo por 'alert' al presionar el botón  'mostrar'*/
-function mostrar()
-{
-    var edad;
+function mostrar() {
 
-    edad = prompt("Ingrese su edad:");
+    var dato
 
-    alert(edad);
+    dato = prompt("Ingrese su dato XD");
+
+    alert(dato);
+
 }
 
