@@ -1,17 +1,19 @@
 function mostrar() {
 
     var romper;
-    var contador;
 
-    for (romper = 0; romper != "romper"; romper++ ) {
+    for (contador = 0 ; contador < 10 ;) {
 
-        if (romper == 10 ) {
+        console.log ("1");
 
-        romper = prompt ("Para detener el bucle, ingrese romper")
+        respuesta = confirm ("Desea detener el bucle?");
+
+        if (respuesta == true) {
+            contador = 10
+        }
 
     }
-}
-}
+
 
 
 }//FIN DE LA FUNCIÓN

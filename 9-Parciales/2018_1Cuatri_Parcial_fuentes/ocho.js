@@ -14,6 +14,7 @@ function mostrar() {
     var bandera2 = 0
     var numMax = 0
     var numMin = 0
+    var promedio = 0
 
     respuesta = true
 
@@ -66,10 +67,14 @@ function mostrar() {
 
     }
 
+    if (contadorPositivos > 0) {
+        promedio = acumuladorPositivos / contadorPositivos;
+    }
+
     document.write("La cantidad de numeros pares son: " + contadorPares + "<br>");
     document.write("La cantidad de numeros impares son: " + contadorImpares + "<br>");
     document.write("La cantidad de ceros son: " + contadorCeros + "<br>");
-    document.write("El promedio de los numeros positivos es: " + acumuladorPositivos / contadorPositivos + "<br>");
+    document.write("El promedio de los numeros positivos es: " + promedio + "<br>");
     document.write("La suma de los numeros negativos es: " + acumuladorNegativos + "<br>");
     document.write("El numero minimo y la letra minima son: " + numMin + " " + letraMin + "<br>");
     document.write("El numero maximo y la letra maxima son: " + numMax + " " + letraMax);
